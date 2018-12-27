@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {% csrf_token %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include "./css.html" %}
+    <title>React Frontend</title>
+</head>
+
+<body>
+    <main id="app"><!-- React Entry --></main>
+</body>
+
+{% include "./scripts.html" %}
+
+{% load static %}
+{% load render_bundle from webpack_loader %}
+{% render_bundle 'main' %}
+
+</html>

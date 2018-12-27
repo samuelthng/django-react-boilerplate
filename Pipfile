@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+djangorestframework = "*"
+djangorestframework-jwt = "*"
+django-cors-headers = "*"
+django-webpack-loader = "*"
+
+[dev-packages]
+coverage = "*"
+pylint = "*"
+"autopep8" = "*"
+pydocstyle = "*"
+
+[requires]
+python_version = "3"
